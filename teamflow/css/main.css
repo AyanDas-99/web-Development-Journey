@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Josefin+Sans&display=swap");
+:root {
+  --primary-color: #794CFF;
+  --secondary-color: #4E5A65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #fcf7f7;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+svg {
+  width: 3em;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  display: none;
+}
+
+h2 {
+  font-size: medium;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container figure {
+  margin: 1.5em;
+}
+.navbar .container figure svg {
+  width: 1.4em;
+}
+.navbar .container figure figcaption {
+  padding: 0.2em;
+  font-weight: 400;
+  font-size: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+.navbar .container a.logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-left: 1em;
+}
+
+.hero {
+  width: 85%;
+  text-align: center;
+  margin: 3em auto;
+}
+.hero a {
+  padding: 0.3em 1em;
+  border-radius: 1em;
+  background: rgba(245, 242, 242, 0.349);
+}
+.hero a span {
+  display: none;
+}
+.hero h1 {
+  margin: 0.7em 0 0.4em;
+}
+.hero p {
+  text-align: justify;
+  color: var(--secondary-color);
+  font-size: small;
+  padding: 0.5em;
+}
+.hero input {
+  height: 2.5em;
+  padding: 0.4em;
+  margin: 0.5em 0;
+  width: 93%;
+  border: 1px solid lightgrey;
+}
+.hero input[type=submit] {
+  background: var(--primary-color);
+  color: white;
+  font-weight: 500;
+}
+
+.dashboard {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.trustee {
+  background-color: white;
+  padding: 0.7em;
+  text-align: center;
+}
+.trustee p {
+  margin: 0.9em;
+  font-size: 0.6rem;
+}
+.trustee .flex {
+  display: flex;
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.trustee .flex img {
+  width: 3em;
+  margin: 0.8em;
+}
+
+section.timeline {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+}
+section.timeline img {
+  width: 90%;
+  margin: 1em auto;
+}
+section.timeline div {
+  padding: 1em;
+}
+section.timeline div blockquote {
+  font-size: small;
+  padding: 1.5em 0.7em;
+  border-bottom: 1px solid lightgrey;
+  color: var(--secondary-color);
+}
+section.timeline div blockquote span {
+  color: black;
+  font-size: medium;
+  display: block;
+  font-weight: bold;
+  margin: 0.7em;
+}
+section.timeline div .focused {
+  border-radius: 0.5em 0.5em 0 0;
+  border-bottom: 5px solid var(--primary-color);
+  background: rgb(238, 232, 232);
+}
+
+section.features {
+  padding-top: 2em;
+  width: 100%;
+  text-align: center;
+  background: white;
+}
+section.features .items {
+  font-size: small;
+  padding: 1em;
+  color: var(--secondary-color);
+  margin: 1.5em 1em;
+}
+section.features .items h5 {
+  color: black;
+  font-size: medium;
+  margin: 0.7em;
+}
+
+section.section3 {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  margin: 2em auto;
+}
+section.section3 img {
+  width: 90%;
+  margin: 1em auto;
+}
+section.section3 .item p {
+  font-size: small;
+  padding: 1em;
+  color: var(--secondary-color);
+}
+section.section3 .item a {
+  margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  display: block;
+  width: 80%;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+section.feedback {
+  padding: 2em 1em;
+  background-color: white;
+  text-align: center;
+}
+section.feedback h2 {
+  padding: 2em 4em;
+}
+section.feedback p {
+  font-size: small;
+  padding: 0.7em 1em;
+  color: var(--secondary-color);
+}
+section.feedback .item {
+  display: none;
+  padding: 4em;
+  font-size: small;
+}
+section.feedback .item img {
+  width: 3em;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+section.feedback .item span {
+  display: block;
+  font-weight: bold;
+}
+section.feedback .visible {
+  display: block;
+}
+
+section.app {
+  height: 45vh;
+  background-color: white;
+}
+section.app .item {
+  padding: 2em;
+  text-align: center;
+  background: var(--primary-color);
+}
+section.app .item .text {
+  color: white;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+footer {
+  background: #1D2830;
+  padding: 1em;
+  color: white;
+}
+footer ul {
+  display: none;
+}
+footer .items {
+  padding: 0.6em;
+}
+footer .items:after {
+  content: "";
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  right: 2em;
+  background: url(../images/footer/down-arrow.svg) no-repeat;
+}
+footer .app {
+  margin-bottom: 2em;
+}
+footer .app p {
+  margin: 1em;
+}
+footer .app .img {
+  margin: 2em;
+}
+footer .copywrite {
+  border-top: 1px solid var(--secondary-color);
+  padding: 2em 0;
+}
+footer .copywrite .socials {
+  display: none;
+}
+
+nav.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 60%;
+  z-index: 999;
+  background: #1D2830;
+}
+nav.active img {
+  margin: 1em;
+  width: 1em;
+}
+nav.active ul li a {
+  display: block;
+  padding: 1.2em;
+  color: white;
+}
+nav.active ul li a:hover {
+  background: var(--primary-color);
+}
+
+@media only screen and (min-width: 730px) {
+  .navbar .container {
+    margin: 2em 2em 8em;
+    font-size: 0.7rem;
+  }
+  .navbar .container figure {
+    display: none;
+  }
+  .navbar .container nav {
+    display: flex;
+  }
+  .navbar .container nav #exit {
+    display: none;
+  }
+  .navbar .container nav ul {
+    margin: 0 2em;
+    display: flex;
+  }
+  .navbar .container nav ul li {
+    margin: 0 0.5em;
+    padding: 0.8em 0;
+  }
+  .navbar .container nav ul li a {
+    color: var(--secondary-color);
+  }
+  .navbar .container nav ul .nav-cta {
+    padding: 0.8em;
+    color: white;
+    background-color: lightblue;
+    border-radius: 0.5em;
+  }
+
+  .hero {
+    width: 50%;
+  }
+  .hero a {
+    font-size: 0.8rem;
+  }
+  .hero a span {
+    display: inline;
+    background-color: rgb(108, 214, 108);
+    color: white;
+    padding: 0.4em;
+    border-radius: 1em;
+  }
+  .hero p {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+  .hero form {
+    display: flex;
+  }
+  .hero form input {
+    height: 3em;
+    margin: 0.2em;
+  }
+  .hero form input[type=submit] {
+    height: 3em;
+    padding: 1.9em;
+  }
+
+  .dashboard {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .trustee {
+    text-align: center;
+  }
+  .trustee div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1em auto;
+  }
+  .trustee div img {
+    padding: 1em 2em;
+  }
+
+  section.timeline {
+    padding: 2em 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  section.timeline img {
+    width: 50%;
+    margin: 0;
+  }
+  section.timeline div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  section.timeline div blockquote {
+    font-size: 0.6rem;
+  }
+  section.timeline div blockquote span {
+    font-size: 0.7rem;
+  }
+
+  section.features .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em auto;
+    width: 80%;
+  }
+  section.features .container .items {
+    width: 25%;
+  }
+  section.features .container .items img {
+    width: 3em;
+  }
+
+  section.section3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+    width: 80%;
+  }
+  section.section3 div {
+    margin: 0;
+  }
+  section.section3 div h2 {
+    font-size: x-large;
+    margin: 1em;
+  }
+  section.section3 img {
+    margin: 0;
+  }
+
+  section.feedback {
+    padding: 3em 0;
+  }
+  section.feedback .review {
+    width: 45%;
+    margin: 1.5em auto;
+  }
+  section.feedback .review h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+  }
+  section.feedback .clients {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+  }
+  section.feedback .clients .item {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  section.feedback .clients .item blockquote {
+    text-align: left;
+    padding: 1em;
+    font-size: 0.7rem;
+  }
+  section.feedback .clients .visible {
+    border-top: 4px solid var(--primary-color);
+  }
+
+  section.app .item {
+    display: flex;
+    width: 80%;
+    border-radius: 1em;
+    margin: 1em auto;
+    justify-content: space-around;
+  }
+  section.app .item .text {
+    width: 40%;
+    font-size: 1.5rem;
+    padding: 1em;
+  }
+  section.app .item .links {
+    padding: 1em;
+  }
+  section.app .item .links img {
+    width: 9em;
+    margin: 1em;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: small;
+  }
+  footer .links ul {
+    display: block;
+    font-weight: 400;
+  }
+  footer .links ul li {
+    margin-top: 1em;
+  }
+  footer .links ul li a {
+    color: white;
+  }
+  footer .links .app {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .links .app img {
+    width: 8em;
+    margin: 0.5em 0;
+  }
+  footer .copywrite {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .copywrite .socials {
+    display: block;
+  }
+  footer .items:after {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,67 @@
+.camera {
+    display: none;
+    .camera-screen {
+        height: 33em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .topbar {
+            img {
+                width: 90%;
+                margin: 0 1em;
+            }
+        }
+
+        .camView {
+            img {
+                display: block;
+                width: 95%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+
+        .bottom-slide {
+            display: flex; 
+            justify-content: space-around;
+            overflow: hidden;
+            div {
+                font-size: .8rem;
+                margin: 0 .5em;
+            }
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            .picView {
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                background: url(../images/camera-shot.jpg);
+                background-size: cover;
+            }
+
+            .captureBtn {
+                width: 3em;
+                height: 3em;
+                border-radius: 50%;
+                background-color: white;
+            }
+
+            .camSwitch {
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                background: url(../images/front.jpg);
+                background-size: cover;
+            }
+        }
+
+    }
+}
+
+.active {
+    display: block;
+}

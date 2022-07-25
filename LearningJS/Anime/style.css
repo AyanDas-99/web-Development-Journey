@@ -1,0 +1,94 @@
+:root {
+  --main-bg: #0e0e0e;
+  --sec-bg: #141414;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--main-bg);
+  color: white;
+}
+
+header {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  max-width: 35vw;
+}
+header form input {
+  padding: 0.3em;
+  height: 2em;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+header form input[type=text] {
+  outline: none;
+  width: 20em;
+  color: white;
+  border: none;
+  border-radius: 1em 0 0 1em;
+}
+header form input[type=submit] {
+  border: none;
+  background-color: darkslategrey;
+  border-radius: 0 1em 1em 0;
+  color: white;
+}
+
+.secondary {
+  background-color: var(--sec-bg);
+  box-shadow: 0 0 20px 5px black;
+}
+
+main {
+  padding: 2em;
+}
+main .tag {
+  padding: 1em;
+  font-size: 2rem;
+}
+main .container {
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .container .item {
+  max-width: 15em;
+  margin: 1em;
+  box-shadow: 0 0 20px 5px black;
+  padding: 1em;
+}
+main .container .item h3 {
+  font-size: 1rem;
+}
+main .container .item .img-cont {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+main .container .item .extra {
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+}
+main .container .item:hover {
+  cursor: pointer;
+}
+main #show {
+  padding: 1em;
+  border: none;
+  color: white;
+  width: 100%;
+}
+main #show:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

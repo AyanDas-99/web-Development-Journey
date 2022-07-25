@@ -1,0 +1,46 @@
+.lock-screen {
+  display: none;
+}
+.lock-screen .hero {
+  height: 33em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.lock-screen .hero .td {
+  padding: 1em;
+}
+.lock-screen .hero .td h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
+.lock-screen .hero .td p {
+  margin: 0;
+}
+.lock-screen .hero .unlock {
+  animation: moveArrow 0.3s alternate-reverse infinite;
+  color: lightgrey;
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+.active {
+  display: block;
+}/*# sourceMappingURL=lock.css.map */

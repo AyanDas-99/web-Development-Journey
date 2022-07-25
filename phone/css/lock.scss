@@ -1,0 +1,45 @@
+.lock-screen {
+    display: none;
+    .hero {
+        height: 33em;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .td {
+            padding: 1em;
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 100;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .unlock {
+            animation: moveArrow .3s alternate-reverse infinite;
+            color: lightgrey;
+        }
+    }
+}
+
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-2px);
+    }
+
+    to {
+        transform: translateY(2px);
+    }
+}
+
+.active {
+    display: block;
+}

@@ -1,0 +1,36 @@
+
+body{
+    background-color: rgb(32, 29, 36);
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+nav{
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    padding: 25px;
+    text-align: center;
+}
+nav #main{
+    font-size: 10ch;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+nav #com{
+    font-size: 3ch;
+    color: whitesmoke;
+}
+
+#secondaryNav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.category {
+    padding: 50px;
+    font-size: 5ch;
+}
+
+.items img{
+    max-width:400px;
+    margin: 20px;
+}

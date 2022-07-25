@@ -1,0 +1,70 @@
+.chrome {
+  display: none;
+}
+.chrome .chrome-screen {
+  height: 33em;
+  background-color: white;
+}
+.chrome .chrome-screen .topbar {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.chrome .chrome-screen .topbar .home-btn {
+  width: 1.5em;
+  height: 1.5em;
+}
+.chrome .chrome-screen .topbar .another {
+  display: flex;
+}
+.chrome .chrome-screen .topbar .another .tabs {
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  margin-right: 0.5em;
+}
+.chrome .chrome-screen .topbar .another img {
+  height: 1.5em;
+}
+.chrome .chrome-screen .search-tab {
+  margin: 1em;
+  text-align: center;
+}
+.chrome .chrome-screen .search-tab img.google {
+  width: 70%;
+}
+.chrome .chrome-screen .search-tab input {
+  height: 1em;
+  width: 90%;
+  border-radius: 1em;
+  padding: 8px;
+  border: none;
+  background-color: rgb(235, 224, 224);
+}
+.chrome .chrome-screen .top-sites {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  margin-top: 2em;
+}
+.chrome .chrome-screen .top-sites figure {
+  margin: 0.5em;
+  text-align: center;
+}
+.chrome .chrome-screen .top-sites figure img {
+  width: 2em;
+  border-radius: 50%;
+}
+.chrome .chrome-screen .top-sites figure figcaption {
+  font-size: 0.7rem;
+  width: 4em;
+  height: 1em;
+  overflow: hidden;
+}
+
+.active {
+  display: block;
+}/*# sourceMappingURL=chrome.css.map */

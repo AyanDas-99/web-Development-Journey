@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url(../images/mountains-gd11b5755f_640.png);
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    // background-color: rgb(235, 170, 117);
+
+    svg {
+        width: 1.3em;
+        margin: 1em 3em;
+        float: left;
+    }
+
+    img {
+        height: 2.2em;
+        margin: 0.5em;
+    }
+
+    ul {
+        margin: 1em;
+        padding-left: 10em;
+        font-family: sans-serif;
+
+        li {
+            display: inline;
+            margin: 0 1em;
+            color: white;
+        }
+    }
+}
+
+.wrapper {
+    width: 80%;
+    margin: 4em auto 0;
+}
+
+header {
+    // width: 100%;
+    text-align: center;
+    color: white;
+    // margin-bottom: 6em;
+
+    h1 {
+        font-weight: 400;
+    }
+
+
+    p {
+        color: black;
+        font-size: 1.5rem;
+        margin: 1em;
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    section {
+        // width: 50%;
+        color: white;
+        padding: 3em;
+        font-size: 1.1rem;
+
+        h1 {
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+    }
+
+    .socials {
+        svg {
+            display: block;
+            margin: 1em;
+            width: 3rem;
+            
+        }
+
+        .insta {
+            width: 2rem;
+        }
+
+    }
+
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(230, 154, 144);
+    color: white;
+    padding: 0.7em 1.3em;
+    margin: 2.6em;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    border-radius: 7px;
+
+    &:hover {
+       background-color: rgb(253, 132, 132); 
+       padding: 0.8em 1.4em;
+    }
+}

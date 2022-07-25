@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background: url(../images/background.jpg) rgba($color: #272727, $alpha: 1.0);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    // border: 1px solid white;
+    text-align: center;
+}
+.center {
+    margin: 23vh 0 0;
+
+    p {
+        letter-spacing: 0.1rem;
+        margin: 0.5em;
+    }
+
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+    }
+
+    figure {
+        margin: 1em 3em;
+        padding: 0.5em;
+        display: inline-block;
+
+        img {
+            width: 2.5em;
+        }
+    }
+
+    form {
+        font-family: 'Roboto', sans-serif;
+        background-color: white;
+        border-radius: 8px;
+        width: fit-content;
+        margin: 2em auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.4em;
+
+        input,
+        select {
+            border: none;
+            width: 14rem;
+            background-color: white;
+            margin: 0 2em;
+            padding: 1em;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        div {
+            border-right: 1px solid lightgray;
+        }
+        
+    }
+
+}

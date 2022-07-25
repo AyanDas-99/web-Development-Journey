@@ -1,0 +1,21 @@
+body {
+    background: rgb(32, 5, 66);
+    font-family: sans-serif;
+}
+
+
+.container {
+    margin: 20vh auto;
+    background: rgb(25, 3, 51);
+    color: white;
+    width: fit-content;
+    /* height: 20em; */
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    /* justify-content: space-between; */
+}
+
+#tip {
+    margin: 2em;
+}

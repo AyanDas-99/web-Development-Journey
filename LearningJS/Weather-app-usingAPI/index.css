@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+}
+
+form {
+    margin: 5em
+}
+
+#name {
+    padding: .5rem;
+    outline: none;
+    letter-spacing: .1rem;
+    
+}
+
+input[type="submit"] {
+    padding: .5rem;
+    background-color: darkslategray;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+}
+
+.result {
+    margin: o auto;
+    min-width: 20vw;
+    min-height: 50vh;
+    box-shadow: 0px 0px 10px 1px grey;
+    padding: 2em;
+}
+
+.cityName {
+    /* padding: 1em; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}

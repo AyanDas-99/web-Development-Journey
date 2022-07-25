@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/lock.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/chrome.css">
+    <link rel="stylesheet" href="./css/camera.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <title>phone</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="mainframe" id="mainframe">
+
+            <div class="screen" id="screen">
+
+                <div class="battery-display">
+                    <div class="battery" id="battery"></div>
+                </div>
+
+                <div class="content">
+
+
+                    <!-- LOCK SCREEN -->
+                    <div class="lock-screen" id="lock-screen">
+                        <div class="hero">
+                            <div class="td">
+                                <h1>9:50</h1>
+                                <p>Saturday 09/07</p>
+                            </div>
+                            <div class="unlock">Click to unlock</div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- HOME SCREEN -->
+                    <div class="home" id="home">
+
+                        <div class="home-screen">
+                            <div class="td">
+                                <h1>9:50</h1>
+                                <p>Saturday 09/07</p>
+                            </div>
+
+                            <div class="google" onclick="OpenApp('chrome')">
+                                <img src="./images/app-icon/google.jpg" alt="google widget" class="google-widget"
+                                    id="google-widget">
+                            </div>
+
+                            <div class="app-tray">
+                                <img src="./images/app-icon/chrome.jpg" class="chrome-app" alt="google chrome app"
+                                    onclick="OpenApp('chrome')">
+                                <img src="./images/app-icon/contact.jpg" class="contacts-app" alt="contacts app">
+                                <img src="./images/app-icon/camera.jpg" class="camera-app" alt="camera app" onclick="OpenApp('camera')">
+                                <img src="./images/app-icon/resso.jpg" class="music-app" alt="music app">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- all apps here -->
+                    <div class="apps" id="apps">
+
+
+                        <!-- CHROME APP -->
+                        <div class="chrome" id="chrome">
+                            <div class="chrome-screen">
+                                <div class="topbar">
+                                    <img src="./images/homebtn.jpg" alt="home btn" class="home-btn">
+                                    <div class="another">
+                                        <div class="tabs">1</div>
+                                        <img src="./images/dots.jpg" alt="three dots">
+                                    </div>
+                                </div>
+
+                                <div class="search-tab">
+                                    <img src="./images/google.jpg" alt="google-logo" class="google">
+                                    <input type="text" name="search-query" id="search"
+                                        placeholder="Search or type web address">
+                                </div>
+                                <div class="top-sites">
+                                    <figure>
+                                        <img src="./images/app-icon/google.jpg" alt="">
+                                        <figcaption>Stackoverflow/ The best way to do something</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="./images/app-icon/google.jpg" alt="">
+                                        <figcaption>Stackoverflow/ The best way to do something</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="./images/app-icon/google.jpg" alt="">
+                                        <figcaption>Stackoverflow/ The best way to do something</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="./images/app-icon/google.jpg" alt="">
+                                        <figcaption>Stackoverflow/ The best way to do something</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- CAMERA APP -->
+                        <div class="camera" id="camera">
+                            <div class="camera-screen">
+
+                                <div class="topbar">
+                                    <img src="./images/camera.jpg" alt="menu">
+                                </div>
+
+                                <div class="camView">
+                                    <img src="./images/camera-shot.jpg" alt="">
+                                </div>
+
+                                <div class="bottom-slide">
+                                    <div class="video">Video</div>
+                                    <div class="photo">Photo</div>
+                                    <div class="portrait">Portrait</div>
+                                    <div class="more">More</div>
+                                </div>
+
+                                <div class="controls">
+                                    <div class="picView"></div>
+                                    <div class="captureBtn"></div>
+                                    <div class="camSwitch"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Music app -->
+                        <div class="music">
+                            <div class="music-screen">
+                                
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="nav" id="nav">
+                <div class="home-btn" id="home-btn" onclick="homescreen()"></div>
+            </div>
+            <div class="vol-rocker"></div>
+            <div class="power-btn" id="lock-btn"></div>
+
+        </div>
+
+        <script src="./js/main.js"></script>
+</body>
+
+</html>

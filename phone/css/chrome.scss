@@ -1,0 +1,81 @@
+.chrome {
+    display: none;
+    .chrome-screen {
+        height: 33em;
+        background-color: white;
+
+        .topbar {
+            padding: 1em;
+            // border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+
+            .home-btn {
+                width: 1.5em;
+                height: 1.5em;
+            }
+
+            .another {
+                display: flex;
+
+                .tabs {
+                    color: black;
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    width: 1em;
+                    height: 1em;
+                    text-align: center;
+                    margin-right: .5em;
+                }
+
+                img {
+                    height: 1.5em;
+                }
+            }
+        }
+
+        .search-tab {
+            margin: 1em;
+            text-align: center;
+
+            img.google {
+                width: 70%;
+            }
+
+            input {
+                height: 1em;
+                width: 90%;
+                border-radius: 1em;
+                padding: 8px;
+                border: none;
+                background-color: rgb(235, 224, 224);
+            }
+        }
+
+        .top-sites {
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            margin-top: 2em;
+            figure {
+                margin: .5em;
+                text-align: center;
+                img {
+                    width: 2em;
+                    border-radius: 50%;
+                }
+                figcaption {
+                    font-size: .7rem;
+                    width: 4em;
+                    height: 1em;
+                    overflow: hidden;
+                }
+            }
+        }
+
+    }
+}
+
+.active {
+    display: block;
+}

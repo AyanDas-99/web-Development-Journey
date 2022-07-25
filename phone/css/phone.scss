@@ -1,0 +1,86 @@
+.mainframe {
+    background: url(../images/desert.jpg);
+    background-repeat: no-repeat;
+    border: 6px solid black;
+    border-top: 15px solid black;
+    border-radius: 1.3em;
+    height: 37em;
+    width: 18em;
+    margin: 2em auto;
+    font-family: sans-serif;
+
+    
+
+    .battery-display {
+        height: 1em;
+        display: flex;
+        justify-content: flex-end;
+        padding: 3px;
+
+        .battery {
+            border: 1px solid white;
+            width: 1.3em;
+            height: .5em;
+            // padding: 2px;
+            background-color: lightgreen;
+            margin-right: 1em;
+        }
+    }
+
+
+    .vol-rocker {
+        background-color: black;
+        position: fixed;
+        z-index: 999;
+        border: 1px solid black;
+        height: 6em;
+        width: .5em;
+        top: 7em;
+        left: 33.1em;
+        border-right: 0px;
+        border-radius: 5px;
+    }
+
+    .power-btn {
+        background-color: black;
+        position: fixed;
+        border: 1px solid black;
+        height: 3em;
+        width: .5em;
+        left: 33.1em;
+        top: 15em;
+        border-left: 0px;
+        border-radius: 5px;
+    }
+
+
+    .content {
+        // border: 2px solid red;
+        height: 95%;
+        color: white;
+    }
+
+    .nav {
+        position: fixed;
+        width: 17em;
+        height: 2em;
+        // background-color: grey;
+        bottom: 3.5em;
+        left: 34.2em;
+        .home-btn {
+            width: 2em;
+            height: 1em;
+            border: 2px solid white;
+            border-radius: 2em;
+            margin: 5px auto;
+        }
+    }
+
+}
+
+.off {
+    display: none;
+}
+.black {
+    background: black;
+}

@@ -1,0 +1,43 @@
+.home {
+  display: none;
+}
+.home .home-screen {
+  height: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-screen .td {
+  padding: 1em;
+}
+.home .home-screen .td h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
+.home .home-screen .td p {
+  margin: 0;
+}
+.home .home-screen .google {
+  width: 80%;
+  border-radius: 1.5em;
+  background-color: ghostwhite;
+}
+.home .home-screen .google img {
+  width: 2em;
+  border-radius: 50%;
+  margin: 0.2em;
+}
+.home .home-screen .app-tray img {
+  height: 3em;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+.home .home-screen .app-tray .music {
+  border-radius: 0;
+}
+
+.active {
+  display: block;
+}/*# sourceMappingURL=home.css.map */

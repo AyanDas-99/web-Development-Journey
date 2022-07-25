@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: url(../images/background.jpg) #272727;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center {
+  margin: 23vh 0 0;
+}
+.center p {
+  letter-spacing: 0.1rem;
+  margin: 0.5em;
+}
+.center .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+.center figure {
+  margin: 1em 3em;
+  padding: 0.5em;
+  display: inline-block;
+}
+.center figure img {
+  width: 2.5em;
+}
+.center form {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em;
+}
+.center form input,
+.center form select {
+  border: none;
+  width: 14rem;
+  background-color: white;
+  margin: 0 2em;
+  padding: 1em;
+}
+.center form input:focus,
+.center form select:focus {
+  border: none;
+  outline: none;
+}
+.center form div {
+  border-right: 1px solid lightgray;
+}/*# sourceMappingURL=index.css.map */

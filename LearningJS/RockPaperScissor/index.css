@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content:center;
+}
+
+.control {
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid pink;
+}
+
+.result {
+    margin: 0 auto;
+    padding: 2em;
+    height: 2em;
+    border: 2px solid red;
+    width: 70%;
+    height: 20em;
+}
+
+button[type="reset"] {
+    padding: .9em;
+    background-color: pink;
+    color: grey;
+}
+
+#rock {
+    background: url(rock.png);
+    background-size: contain;
+}
+
+#paper {
+    background: url(paper.png);
+    background-size: cover;
+}
+
+#scissor {
+    background: url(scissor.png);
+    background-size: cover;
+}
+
+#selection img {
+    width: 8em;
+    height: auto;
+}
+
+#selection {
+    display: flex;
+    justify-content: space-around;
+}
+
+span#result {
+    font-weight: bold;
+    font-size: 5rem;
+}

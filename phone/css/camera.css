@@ -1,0 +1,56 @@
+.camera {
+  display: none;
+}
+.camera .camera-screen {
+  height: 33em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.camera .camera-screen .topbar img {
+  width: 90%;
+  margin: 0 1em;
+}
+.camera .camera-screen .camView img {
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+.camera .camera-screen .bottom-slide {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.camera .camera-screen .bottom-slide div {
+  font-size: 0.8rem;
+  margin: 0 0.5em;
+}
+.camera .camera-screen .controls {
+  display: flex;
+  justify-content: space-around;
+}
+.camera .camera-screen .controls .picView {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: url(../images/camera-shot.jpg);
+  background-size: cover;
+}
+.camera .camera-screen .controls .captureBtn {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: white;
+}
+.camera .camera-screen .controls .camSwitch {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: url(../images/front.jpg);
+  background-size: cover;
+}
+
+.active {
+  display: block;
+}/*# sourceMappingURL=camera.css.map */
