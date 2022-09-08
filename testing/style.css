@@ -15,15 +15,14 @@
     /* row-gap: 1em;
     column-gap: 1em; */
     gap: 1em 1em;
+
+    /* justify-items:center; */
 }
 
 .card {
-    /* margin: 3px; */
-    border: 1px solid black;
-    /* padding: 2px; */
-    align-items: center;
-    text-align: center;
+    /* border: 1px solid black; */
     min-height: 50px;
+    border-radius: 5px;
 }
 
 .a {
@@ -66,5 +65,6 @@
 .data {
     width: 10px;
     height: 10px;
-    background: black;
+    margin: .5em;
+    border: 1px solid black;
 }
