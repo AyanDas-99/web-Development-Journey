@@ -1,0 +1,70 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr) 1.5fr;
+    grid-template-areas: 
+    "a b c"
+    "d . f"
+    "g h f"
+    "i i f"
+    "e e e"
+    ;
+    /* grid-template:
+    [row1-start] "a b c" 1fr [row1-end]
+    [row2-start] "d . f" */
+    /* row-gap: 1em;
+    column-gap: 1em; */
+    gap: 1em 1em;
+}
+
+.card {
+    /* margin: 3px; */
+    border: 1px solid black;
+    /* padding: 2px; */
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+}
+
+.a {
+    grid-area: a;
+    background: palegreen;
+}
+.b {
+    grid-area: b;
+    background: orange;
+}
+.c {
+    grid-area: c;
+    background-color: pink;
+}
+.d {
+    grid-area: d;
+    background: palegoldenrod;
+}
+.e {
+    grid-area: e;
+    background-color: lightblue;
+}
+.f {
+    grid-area: f;
+    background-color: lightcoral;
+}
+.g {
+    grid-area: g;
+    background-color: lightpink;
+}
+.h {
+    grid-area: h;
+    background-color: skyblue;
+}
+.i {
+    grid-area: i;
+    background-color: orchid;
+}
+
+.data {
+    width: 10px;
+    height: 10px;
+    background: black;
+}
