@@ -1,0 +1,16 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    --fs-para: 16px;
+    --ff: 'Outfit', sans-serif;
+    --fw-300:300;
+    --fw-400:400;
+    --fw-600:600;
+}
