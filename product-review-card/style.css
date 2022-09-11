@@ -25,10 +25,9 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 1em auto;
     width: var(--mobile-width);
     background-color: white;
-    border-radius: 10px;
 }
 
 .hero-img {
@@ -36,12 +35,12 @@ body {
 }
 
 .div {
-    height: 250px;
     overflow: hidden;
+    height: 250px;
 }
 
 .content {
-    padding: 2em;
+    padding:1em 2.2em;
 }
 
 p {
@@ -53,9 +52,11 @@ p {
 
 h1 {
     font-family: var(--ff-fraunces);
-    font-weight: var(--fw-700); 
+    font-weight: var(--fw-700);
     color: var(--Very-dark-blue);
     font-size: xx-large;
+    line-height: 1em;
+    margin-bottom: .7em;
 }
 
 .price {
@@ -82,14 +83,15 @@ h1 {
 .cta {
     background-color: var(--Dark-cyan);
     color: white;
-    border-radius: 5px; 
+    border-radius: 5px;
     text-align: center;
     margin-top: 1em;
 }
+
 .cta p {
     color: white;
     display: inline-block;
-    margin:0 5px;
+    margin: 0 5px;
 }
 
 .spaced {
@@ -97,9 +99,34 @@ h1 {
 }
 
 .focused {
-    background-color:hsl(158, 36%, 17%);    
+    background-color: hsl(158, 36%, 17%);
 }
 
 @media (min-width: 50em) {
-    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 800px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .div {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .content {
+        padding-right: 6em;
+    }
+    p{
+        margin:1em 0;
+        line-height: 1.8rem;
+    }
+    .price {
+        width: 70%;
+    }
+    .cta {
+        margin-top: 2em;
+    } 
 }
