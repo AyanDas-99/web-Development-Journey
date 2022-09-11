@@ -10,7 +10,88 @@
 
     --fs-para: 16px;
     --ff: 'Outfit', sans-serif;
-    --fw-300:300;
-    --fw-400:400;
-    --fw-600:600;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--mainBG);
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    width: 300px;
+    background: var(--cardBG);
+    font-family: var(--ff);
+    color: var(--Softblue);
+    line-height: 1.5em;
+    font-size: var(--fs-para);
+    border-radius: .5em;
+}
+
+.card img {
+    width: 90%;
+    padding: 1em;
+}
+
+h1 {
+    font-weight: var(--fw-600);
+    font-size: 1.3rem;
+    color: var(--White);
+    margin-bottom: 1em;
+}
+
+.container {
+    margin: 0 1em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    /* margin: .7em 0; */
+    padding: 1em 0;
+}
+
+.flex div {
+    display: flex;
+    justify-content: center;
+}
+
+.flex div img {
+    height: 20px;
+    width: auto;
+    padding: 0 7px;
+}
+
+.cyan {
+    color: var(--Cyan);
+}
+
+.line {
+    width: 100%;
+    border: 1px solid var(--line);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.creator span {
+    color: var(--White);
+}
+
+.creator img {
+    height: 35px;
+    width: auto;
+    padding: 0 9px;
 }
