@@ -95,5 +95,8 @@ h1 {
 .creator img {
     height: 35px;
     width: auto;
-    padding: 0 9px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: .9em;
 }
