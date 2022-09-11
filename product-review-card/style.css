@@ -1,14 +1,105 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    --fs-para: 14px;
+    --fw-500: 500;
+    --fw-700: 700;
+    --ff-mont: 'Montserrat', sans-serif;
+    --ff-fraunces: 'Fraunces', serif;
+}
+
 * {
     margin: 0;
     padding: 0;
+    line-height: 1.5em;
+}
+
+body {
+    background-color: var(--Cream);
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: var(--mobile-width);
+    background-color: white;
+    border-radius: 10px;
 }
 
-.container div {
-    border: 2px solid black;
-    height: 50vh;
+.hero-img {
+    width: var(--mobile-width);
+}
+
+.div {
+    height: 250px;
+    overflow: hidden;
+}
+
+.content {
+    padding: 2em;
+}
+
+p {
+    font-size: var(--fs-para);
+    font-family: var(--ff-mont);
+    color: var(--Dark-grayish-blue);
+    padding: 1em 0;
+}
+
+h1 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-700); 
+    color: var(--Very-dark-blue);
+    font-size: xx-large;
+}
+
+.price {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-price {
+    font-weight: var(--fw-700);
+    font-family: var(--ff-fraunces);
+    font-size: x-large;
+    color: var(--Dark-cyan);
+}
+
+.actual-price {
+    font-size: var(--fs-para);
+    font-family: var(--ff-mont);
+    text-decoration: line-through;
+    color: var(--Dark-cyan);
+}
+
+.cta {
+    background-color: var(--Dark-cyan);
+    color: white;
+    border-radius: 5px; 
+    text-align: center;
+    margin-top: 1em;
+}
+.cta p {
+    color: white;
+    display: inline-block;
+    margin:0 5px;
+}
+
+.spaced {
+    letter-spacing: 4px;
+}
+
+.focused {
+    background-color:hsl(158, 36%, 17%);    
+}
+
+@media (min-width: 50em) {
+    
 }
