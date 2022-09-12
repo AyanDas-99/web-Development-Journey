@@ -24,7 +24,7 @@ ul {
 }
 
 .hero-wrapper {
-    background: url('../images/pexels-cottonbro-4904563.jpg');
+    background: url('../images/maria-lysenko-sk6xKcwzKBY-unsplash.jpg');
     background-size: cover;
 }
 
@@ -149,13 +149,18 @@ h2::before {
     opacity: .4;
 
     li {
-        margin: 2em 0;
+        margin: 4em 0;
 
         img {
             height: auto;
-            width: 200px;
+            width: 150px;
         }
     }
+}
 
-
+@media (min-width: 500px) {
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
 }
