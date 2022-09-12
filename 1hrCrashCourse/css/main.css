@@ -44,6 +44,7 @@ header ul {
 }
 header ul li a {
   padding: 0 0.6em;
+  font-size: 14px;
 }
 
 .hero-content {
@@ -142,12 +143,86 @@ h2::before {
 }
 .companies li img {
   height: auto;
-  width: 150px;
+  width: 100px;
 }
 
 @media (min-width: 500px) {
   .companies {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 650px) {
+  body {
+    font-size: 18px;
+  }
+  .wrapper {
+    padding: 1.5em 4em;
+  }
+  .carousal-container {
+    display: flex;
+  }
+  .arrows {
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    margin: 1em;
+  }
+  #left-arrow {
+    transform: rotate(180deg);
+  }
+  ul.carousal {
+    display: flex;
+    margin-bottom: 0;
+  }
+  ul.carousal li {
+    margin-right: 1em;
+    margin-bottom: 0;
+    padding: 2em;
+  }
+  .companies {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 853px) {
+  body {
+    font-size: 20px;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .companies {
+    grid-template-columns: repeat(4, auto);
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .subtitle {
+    font-size: 1.2em;
+  }
+  h2 {
+    text-align: left;
+    font-size: 2em;
+  }
+  .v-padding {
+    padding: 4em;
+  }
+  .light-purple-wrapper {
+    padding-bottom: 4em;
+  }
+  .move-up {
+    margin-top: -7em;
+  }
+}
+@media (min-width: 1200px) {
+  .stats li {
+    border-right: 1px solid rgb(124, 89, 148);
+    padding-right: 5%;
+  }
+  .stats li:last-child {
+    border: 0;
   }
 }/*# sourceMappingURL=main.css.map */
