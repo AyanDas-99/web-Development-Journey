@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Sandbox: Section 2</title>
+    <link rel="stylesheet" href="/main.css">
+    <title>Calculator</title>
 </head>
+
 <body>
-   <p id="empty"></p>
-   <script src="app.js"></script>
+    <div class="wrapper">
+        <div class="body">
+            <div class="result-panel">
+                <div class="history" id="history"></div>
+                <div class="active" id="active"></div>
+            </div>
+            <div class="operation-panel">
+                <table class="operators">
+                    <tbody>
+                        <tr class="orange">
+                            <td id="ac">AC</td>
+                            <td id="x" >x</td>
+                            <td id="%" >%</td>
+                            <td id="/">/</td>
+                        </tr>
+                        <tr>
+                            <td id="7">7</td>
+                            <td id="8">8</td>
+                            <td id="9">9</td>
+                            <td id="*" class="orange">*</td>
+                        </tr>
+                        <tr>
+                            <td id="4">4</td>
+                            <td id="5">5</td>
+                            <td id="6">6</td> <td id="-"onclick="calc(this)" class="orange">-</td>
+                        </tr>
+                        <tr>
+                            <td id="1">1</td>
+                            <td id="2">2</td>
+                            <td id="3">3</td>
+                            <td id="+" class="orange">+</td>
+                        </tr>
+                        <tr>
+                            <td id="-0-" class="orange">-0-</td>
+                            <td id="0">0</td>
+                            <td id=".">.</td>
+                            <td id="=" class="orange">=</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script></script>
 </body>
+
 </html>
