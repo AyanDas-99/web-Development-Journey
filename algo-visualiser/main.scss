@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: baseline;
+    // width: fit-content;
+    justify-content: space-evenly;
+}
+
+.bar {
+    background: lightgreen;
+    width: 1em;
+    // margin: 0 1em;
+}
+
+.nums {
+    // border: 1px solid black;
+    width: 1em;
+    // margin: 0 1em;
+}
+
+button {
+    padding: 4px;
+    margin: 0 10em;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.main {
+    // width: fit-content;
+    margin: 5em auto;
+}
