@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+
+:root {
+    --ff-head: font-family: 'Arimo', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: beige;
+}
+
+header {
+    padding: 1em;
+    background-color: darkred;
+}
+
+header h1 {
+    font-family: var(--ff-head);
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    padding: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    margin: 2.5em 0;
+    padding: 6px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+.hero p {
+    margin: 1em 0;
+}
+
+.hero img {
+    max-width: 100%;
+    margin: 1em 0;
+}
+
+.hero span {
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+    margin-right: .5em;
+    border-bottom: 2px solid darkred;
+}
+
+@media (min-width: 50em) {
+    input[type="text"] {
+        width: 700px;
+    }
+
+}

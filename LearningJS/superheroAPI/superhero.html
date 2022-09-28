@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>superhero</title>
 </head>
 
 <body>
-    <div">
+    <header>
+        <h1>THE MARVEL HEADQUARTERS</h1>
+    </header>
         <form name="form" id="forms">
             <input type="text" name="heroname" id="heroname">
             <input type="submit" value="search">
         </form>
-        <div id="data"></div>
-        <div id="superhero"></div>
+    <div class="container">
+        <div class="hero">
+            <div id="data">
+               <p class="pre">The ultimate database of all our personals</p> 
+            </div>
+            <div id="superhero"></div>
         </div>
-        <script src="superhero.js"></script>
+    </div>
+    <script src="superhero.js"></script>
 </body>
 
 </html>
