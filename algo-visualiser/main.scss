@@ -11,15 +11,13 @@
 }
 
 .bar {
-    background: lightgreen;
+    background: rgb(112, 85, 231);
     width: 1em;
-    // margin: 0 1em;
+    border: 1px solid black;
 }
 
 .nums {
-    // border: 1px solid black;
     width: 1em;
-    // margin: 0 1em;
 }
 
 button {
@@ -30,6 +28,5 @@ button {
 }
 
 .main {
-    // width: fit-content;
     margin: 5em auto;
 }

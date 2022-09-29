@@ -10,8 +10,9 @@
 }
 
 .bar {
-  background: lightgreen;
+  background: rgb(112, 85, 231);
   width: 1em;
+  border: 1px solid black;
 }
 
 .nums {
