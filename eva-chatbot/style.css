@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+input[type="text"] {
+    width: 30em;
+    padding: .5em;
+    outline: none;
+    border-radius: 10px;
+}
+
+input[type="image"] {
+    width: 30px;
+}
+
+.container {
+    margin: auto;
+    max-width: 30em;
+    display: none;
+}
+
+.message-display {
+    height: 85vh;
+    overflow:auto;
+    margin: .5em;
+    box-shadow: 0px 0px 10px grey;
+    padding: 1em;
+    background-size: contain;
+
+}
+
+
+.user-message {
+    /* margin: 1em; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-message p {
+    background-color: rgb(243, 186, 186);
+    padding: .7em;
+    width: fit-content;
+    border-radius: .5em;
+}
+
+.response {
+    margin: 1em;
+}
+
+.response p {
+    background-color: rgb(204, 234, 253);
+    padding: .7em;
+    width: fit-content;
+    border-radius: .5em;
+}
+
+
+.loading {
+    text-align: center;
+    padding-top: 5em;
+}
