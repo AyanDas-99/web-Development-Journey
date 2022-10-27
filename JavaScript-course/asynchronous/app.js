@@ -3,16 +3,19 @@ function loadScript(src, callback) {
     script.src = src;
     script.onload = function() {
         console.log('Script loaded');
-        callback();
+        callback(null, src);
     }
     script.onerror = ()=>{
-        alert('Nothing is loaded');
+        console.log('Nothing is loaded');
+        callback(new Error("Man!! why  isn't it working"), src);
     }
     document.body.appendChild(script);
 }
 
 loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js", say);
 
-function say(){
-    alert('Everything is loaded');
+function say(error, src){
+    if(error)
+    console.log(error+' '+src);
+    console.log(src);
 }
