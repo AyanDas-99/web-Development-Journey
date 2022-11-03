@@ -5,7 +5,7 @@ This repository is meant to document the journey of the author while he learns W
 
 This repository contains a lot of code (not all) that has been written by the author in his journey of Frontend development.
 
-** The code here is not meant to be used for learning ** as it might contain a lot of mistakes and some bad practices.
+**The code here is not meant to be used for learning** as it might contain a lot of mistakes and some bad practices.
 
 ## Contributions
 This repository is not open to contributions.
