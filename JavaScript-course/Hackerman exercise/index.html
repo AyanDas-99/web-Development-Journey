@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackerman</title>
+
+    <style>
+        .hackmode {
+            background-color: black;
+            color: lightgreen;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+            line-height: 2rem;
+        }
+
+        form {
+        }
+
+        .text{
+            display: none;
+        }
+    </style>
+
+
 </head>
+
 <body>
     <div class="container">
         <form>
-            <input type="text" name="name" id="name">
-            <input type="text" name="ID" id="ID">
+            <input type="text" name="name" id="name" placeholder="Username">
+            <input type="text" name="ID" id="ID" placeholder="ID">
             <button type="submit">Hack</button>
         </form>
+
+        <div class="text">
+        </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
