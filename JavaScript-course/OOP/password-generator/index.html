@@ -38,6 +38,12 @@
             font-size: large;   
 
         }
+        #length{
+            width: 30px;
+        }
+        #copy{
+            padding: 5px;
+        }
     </style>
 
 
@@ -48,7 +54,7 @@
         <legend>Difficulty level:</legend>
         <div>
             <label for="easy">Easy</label>
-            <input type="radio" value="easy" name="difficulty">
+            <input type="radio" value="easy" name="difficulty" checked>
         </div>
         <div>
             <label for="difficult">Difficult</label>
@@ -58,9 +64,12 @@
             <label for="ultra">Very Difficult</label>
             <input type="radio" value="ultra" name="difficulty">
         </div>
+        <label for="length">Password length</label>
+        <input type="number" name="length" id="length" value="10">
         <button id="generate">Generate</button>
         <div class="password">
             <input type="text" name="generatedPassword" id="generatedPassword">
+        <button id="copy" disabled>copy</button>
         </div>
     </form>
     <script src="app.js"></script>
