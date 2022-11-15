@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>password generator</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        form {
+            width: fit-content;
+            margin: 5em auto;
+            border: 1px solid black;
+            padding: 1em;
+            background-color: lightgray;
+        }
+        legend{
+            font-size: large;
+            font-weight: bold;
+        }
+        label{
+            color: darkslategrey;
+        } 
+        #generate{
+            margin:1em 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: .5rem;
+        }
+        #generatedPassword{
+            font-size: large;   
+
+        }
+    </style>
+
+
 </head>
+
 <body>
-    
+    <form>
+        <legend>Difficulty level:</legend>
+        <div>
+            <label for="easy">Easy</label>
+            <input type="radio" value="easy" name="difficulty">
+        </div>
+        <div>
+            <label for="difficult">Difficult</label>
+            <input type="radio" value="difficult" name="difficulty">
+        </div>
+        <div>
+            <label for="ultra">Very Difficult</label>
+            <input type="radio" value="ultra" name="difficulty">
+        </div>
+        <button id="generate">Generate</button>
+        <div class="password">
+            <input type="text" name="generatedPassword" id="generatedPassword">
+        </div>
+    </form>
     <script src="app.js"></script>
 </body>
+
 </html>
