@@ -1,2 +1,5 @@
 # TeamFlow
-![newDesign](https://github.com/AyanDas-99/web-Development-Journey/blob/main/teamflow/Screenshot%20from%202023-01-04%2018-36-59.png)
+<p align="center">
+  <img src="Screenshot from 2023-01-04 18-36-59.png" width="350" title="hover text">
+  <img src="Screenshot from 2023-01-04 18-37-14.png" width="350" alt="accessibility text">
+</p>
