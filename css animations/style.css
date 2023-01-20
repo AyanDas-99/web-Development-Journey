@@ -1,16 +1,45 @@
 .box {
     height: 50px;
     width: 50px;
-    background-color: #270058;
-    /* transition: margin-top 5000ms; */
-    transition: background-color 10000ms ;
+    margin: 1em;
+    background-color: pink;
+    animation: round ease; 
 }
 
-.box:hover {
-    background-color: red;
-}
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+@keyframes round {
+    0% {
+        border-top: 2px solid skyblue;
+        border-right: 2px solid green;
+        border-bottom: 2px solid blue;
+        border-left: 2px solid orange;
+    }
+
+    25% {
+        border-right: 2px solid skyblue;
+        border-bottom: 2px solid green;
+        border-left: 2px solid blue;
+        border-top: 2px solid orange;
+    }
+
+    50% {
+        border-bottom: 2px solid skyblue;
+        border-left: 2px solid green;
+        border-top: 2px solid blue;
+        border-right: 2px solid orange;
+    }
+
+    75% {
+        border-left: 2px solid skyblue;
+        border-top: 2px solid green;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid orange;
+    }
+
+   100% {
+        border-top: 2px solid skyblue;
+        border-right: 2px solid green;
+        border-bottom: 2px solid blue;
+        border-left: 2px solid orange;
+    }
 }
