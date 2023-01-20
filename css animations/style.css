@@ -1,0 +1,16 @@
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: #270058;
+    /* transition: margin-top 5000ms; */
+    transition: background-color 10000ms ;
+}
+
+.box:hover {
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
